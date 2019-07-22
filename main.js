@@ -584,8 +584,8 @@ define([
                     if(this.regionJSON.hasNewMangroves) {
                         this.$el.find('.flood-with-select-container').hide();
                         this.$el.find('.flood-without-select-container').hide();
-                        this.$el.find('.flood-slider-conatiner').hide();
-                        this.$el.find('flood-select-conatiner').hide();
+                        this.$el.find('.flood-slider-container').hide();
+                        this.$el.find('.flood-select-container').hide();
                     }
                     this.$el.find('.stat.area').show();
                     this.$el.find('option.coral').show();
@@ -613,7 +613,7 @@ define([
                     if(this.regionJSON.hasNewMangroves) {
                         this.$el.find('.flood-with-select-container').show();
                         this.$el.find('.flood-without-select-container').show();
-                        this.$el.find('.flood-slider-conatiner').show();
+                        this.$el.find('.flood-slider-container').show();
                     }
                     this.$el.find('.stat.area').hide();
                     this.$el.find('option.coral').hide();
@@ -991,7 +991,7 @@ define([
                             this.$el.find('.flood-select-container').hide();
                             this.$el.find('.flood-with-select-container').hide();
                             this.$el.find('.flood-without-select-container').hide();
-                            this.$el.find('.flood-slider-conatiner').hide();
+                            this.$el.find('.flood-slider-container').hide();
                             this.floodWithLayer.setVisibility(false);
                             this.floodWithoutLayer.setVisibility(false);
                             this.coastalProtectionLayer.setVisibility(true);
