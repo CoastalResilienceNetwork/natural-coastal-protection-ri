@@ -1134,7 +1134,7 @@ define([
                 this.state = this.state.setLayer(this.layer);
                 this.state = this.state.setVariable(this.variable);
 
-                if(this.regionConfig.hasNewMangroves) {
+                if(this.regionJSON.hasNewMangroves) {
                     if(this.provider == 'mangroves' && this.period != 'ANN') {
                         this.floodPolyLayer.setVisibleLayers([this.layerID]);
                         this.floodPolyLayer.setVisibility(this.state.getFloodPolyVisibility());
