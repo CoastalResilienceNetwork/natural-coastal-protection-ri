@@ -1618,14 +1618,14 @@ define([
                     .call(this.chart.xAxis);
 
                 if (this.provider === 'mangroves') {
-                    this.chart.barx.domain([i18next.t('2010 Mangroves'), i18next.t('No Mangroves')]);
+                    this.chart.barx.domain([i18next.t('2005 Mangroves'), i18next.t('No Mangroves')]);
 
                     this.chart.svg.select('.col-1')
                         .transition().duration(this.transitionsEnabled ? 600 : 0)
                         .style('opacity', 0)
                         .transition().duration(this.transitionsEnabled ? 600 : 0)
                         .style('opacity', 1)
-                        .text(i18next.t("2010 Mangroves"))
+                        .text(i18next.t("2005 Mangroves"))
 
                     this.chart.svg.select('.col-2')
                         .transition().duration(this.transitionsEnabled ? 600 : 0)
@@ -1656,7 +1656,7 @@ define([
                 // Update the  y-axis label to match the current variable selected
                 var text = '';
                 if (this.variable === 'BCF') {
-                    text = i18next.t('Built Capital at Risk (Millions)');
+                    text = i18next.t('Built Capital Damaged ($Millions)');
                 } else if (this.variable === 'PF') {
                     text = i18next.t('People At Risk (No)');
                 } else if (this.variable === 'AF') {
@@ -1750,7 +1750,7 @@ define([
                     bardata.push({x: i18next.t('Present'), y: bary});
                     bardata.push({x: i18next.t('Reef Loss'), y: bary1m});
                 } else {
-                    bardata.push({x: i18next.t('2010 Mangroves'), y: bary});
+                    bardata.push({x: i18next.t('2005 Mangroves'), y: bary});
                     bardata.push({x: i18next.t('No Mangroves'), y: bary1m});
                 }
 
