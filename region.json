@@ -1,0 +1,253 @@
+{
+  "defaultRegion": "Jamaica",
+  "serviceURL": "https://services2.coastalresilience.org/arcgis/rest/services/Jamaica/Natural_Coastal_Protection/MapServer",
+  "adminTableIndex": 108,
+  "adminUnitsIndex": 1,
+  "getStarted": true,
+  "regions": {
+    "Global" : {
+      "EXTENT" : [-180,-82,180,85],
+      "EXTENT_MANGROVES": [-79.843140,16.843976,-75.275574,19.321511]
+    },
+    "Cuba" : {
+      "EXTENT" : [-88.154297,15.686510,-69.884033,25.433353],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Cuba.pdf"
+    },
+    "Dominican Republic" : {
+      "EXTENT" : [-72.268066,17.098792,-68.186646,20.514499],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Dominican_Republic.pdf"
+    },
+    "Indonesia" : {
+      "EXTENT" : [79.804688,-19.518375,152.885742,21.289374],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Indonesia.pdf"
+    },
+    "Jamaica" : {
+      "EXTENT" : [-79.843140,16.843976,-75.275574,19.321511],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Jamaica.pdf"
+    },
+    "Grenada, St. Vincent and the Grenadines" : {
+      "EXTENT" : [-62.000, 11.750, -61.100, 12.500],
+      "SNAPSHOT": "#"
+    },
+    "Malaysia" : {
+      "EXTENT" : [97.954102,0.351560,119.926758,9.665738],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Malaysia.pdf"
+    },
+    "Mexico" : {
+      "EXTENT" : [-117.817383,15.156974,-86.132813,32.657876],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Mexico.pdf"
+    },
+    "Philippines" : {
+      "EXTENT" : [114.653320,4.346411,127.836914,19.766704],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Philippines.pdf"
+    },
+    "Saudi Arabia" : {
+      "EXTENT" : [31.904297,11.953349,60.292969,37.926868],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Saudi_Arabia.pdf"
+    },
+    "Taiwan" : {
+      "EXTENT" : [119.421387,21.810508,122.343750,25.393661],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/Taiwan.pdf"
+    },
+    "US/Puerto Rico" : {
+      "EXTENT" : [-126.035156,17.392579,-65.039063,49.267805],
+      "SNAPSHOT": "http://ow-maps.oceanwealth.org/NCP_Snapshots/US_Puerto_Rico.pdf"
+    }
+  },
+  "layerLookup": {
+    "mangroves": {
+        "ANN": {
+          "people": 84,
+          "capital": 85
+        },
+        "25RP": {
+          "people": 86,
+          "capital": 87,
+          "with": 92,
+          "without": 93
+        },
+        "100RP": {
+          "people": 88,
+          "capital": 89,
+          "with": 94,
+          "without": 95
+        },
+        "500RP": {
+          "people": 90,
+          "capital": 91,
+          "with": 96,
+          "without": 97
+        }
+    },
+    "coral": {
+        "ANN": {
+          "people": 99,
+          "capital": 100,
+          "area": 101
+        },
+        "25RP": {
+          "people": 102,
+          "capital":103,
+          "area": 104
+        },
+        "100RP": {
+          "people": 105,
+          "capital": 106,
+          "area": 107
+        }
+    }
+  },
+  "coralData": {
+    "Jamaica": {
+      "E2E1_DIF_ANN_PF": 1687.16,
+      "E1_ANN_PF": 558.47,
+      "E2_ANN_PF": 2245.63,
+      "E2E1_DIF_ANN_BCF": 56278584.94,
+      "E1_ANN_BCF": 19262646.97,
+      "E2_ANN_BCF": 75541231.91,
+      "E2E1_DIF_ANN_AF": 2.56,
+      "E1_ANN_AF": 3.25,
+      "E2_ANN_AF": 5.81,
+      "E2E1_DIF_ANN_BCD50": 45720769.12,
+      "E1_ANN_BCD50": 13924651.71,
+      "E2_ANN_BCD50": 59645420.84,
+      "E2E1_DIF_ANN_PCT_GDP": 0.136,
+      "E2E1_DIF_10RP_PF": 35566.2,
+      "E1_10RP_PF": 4965.63,
+      "E2_10RP_PF": 40531.84,
+      "E2E1_DIF_10RP_BCF": 1180684544.47,
+      "E1_10RP_BCF": 164843161.24,
+      "E2_10RP_BCF": 1345527705.71,
+      "E2E1_DIF_10RP_AF": 121.11,
+      "E1_10RP_AF": 124.3,
+      "E2_10RP_AF": 245.41,
+      "E2E1_DIF_10RP_BCD50": 777846724.95,
+      "E1_10RP_BCD50": 63916521.31,
+      "E2_10RP_BCD50": 841763246.27,
+      "E2E1_DIF_25RP_PF": 53477.18,
+      "E1_25RP_PF": 7978.28,
+      "E2_25RP_PF": 61455.46,
+      "E2E1_DIF_25RP_BCF": 1775271844.98,
+      "E1_25RP_BCF": 264853457.22,
+      "E2_25RP_BCF": 2040125302.2,
+      "E2E1_DIF_25RP_AF": 155.64,
+      "E1_25RP_AF": 144.04,
+      "E2_25RP_AF": 299.68,
+      "E2E1_DIF_25RP_BCD50": 1218861144.96,
+      "E1_25RP_BCD50": 143150928.12,
+      "E2_25RP_BCD50": 1362012073.09,
+      "E2E1_DIF_50RP_PF": 62974.41,
+      "E1_50RP_PF": 13065.31,
+      "E2_50RP_PF": 76039.72,
+      "E2E1_DIF_50RP_BCF": 2090549564.03,
+      "E1_50RP_BCF": 433726560.85,
+      "E2_50RP_BCF": 2524276124.88,
+      "E2E1_DIF_50RP_AF": 171.83,
+      "E1_50RP_AF": 168.38,
+      "E2_50RP_AF": 340.2,
+      "E2E1_DIF_50RP_BCD50": 1544291492.21,
+      "E1_50RP_BCD50": 256242514.82,
+      "E2_50RP_BCD50": 1800534007.02,
+      "E2E1_DIF_100RP_PF": 73347.36,
+      "E1_100RP_PF": 21920.86,
+      "E2_100RP_PF": 95268.22,
+      "E2E1_DIF_100RP_BCF": 2434898503.74,
+      "E1_100RP_BCF": 727702639.96,
+      "E2_100RP_BCF": 3162601143.7,
+      "E2E1_DIF_100RP_AF": 159.14,
+      "E1_100RP_AF": 223.8,
+      "E2_100RP_AF": 382.94,
+      "E2E1_DIF_100RP_BCD50": 1838978227.94,
+      "E1_100RP_BCD50": 491430780.11,
+      "E2_100RP_BCD50": 2330409008.05
+    }
+  },
+  "mangroveData": {
+    "Jamaica": {
+      "E2E1_DIF_ANN_PF": 1474,
+      "E1_ANN_PF": 31451,
+      "E2_ANN_PF": 32925,
+      "E2E1_DIF_ANN_BCF": 21741425,
+      "E1_ANN_BCF": 111230026,
+      "E2_ANN_BCF": 132971451,
+      "E2E1_DIF_10RP_PF": 0,
+      "E1_10RP_PF": 43637,
+      "E2_10RP_PF": 43637,
+      "E2E1_DIF_10RP_BCF": 0,
+      "E1_10RP_BCF": 0,
+      "E2_10RP_BCF": 0,
+      "E2E1_DIF_25RP_PF": 1431,
+      "E1_25RP_PF": 90524,
+      "E2_25RP_PF": 91956,
+      "E2E1_DIF_25RP_BCF": 20454310,
+      "E1_25RP_BCF": 698664804,
+      "E2_25RP_BCF": 719119114,
+      "E2E1_DIF_50RP_PF": 3858,
+      "E1_50RP_PF": 108259,
+      "E2_50RP_PF": 112117,
+      "E2E1_DIF_50RP_BCF": 56815420,
+      "E1_50RP_BCF": 931523033,
+      "E2_50RP_BCF": 988338453,
+      "E2E1_DIF_100RP_PF": 22741,
+      "E1_100RP_PF": 159721,
+      "E2_100RP_PF": 182462,
+      "E2E1_DIF_100RP_BCF": 386310802,
+      "E1_100RP_BCF": 1704237658,
+      "E2_100RP_BCF": 2090548460,
+      "E2E1_DIF_500RP_PF": 150822,
+      "E1_500RP_PF": 770754,
+      "E2_500RP_PF": 921576,
+      "E2E1_DIF_500RP_BCF": 2407408469,
+      "E1_500RP_BCF": 10888670687,
+      "E2_500RP_BCF": 13296079156
+    }
+  },
+  "hasAdmin": true,
+  "hasNCP": true,
+  "hasNewMangroves": true,
+  "referenceLayers": {
+    "Reference Layers": {
+      "Wetlands 2006": 20,
+      "Springs 2006": 21,
+      "Wells 2006": 22,
+      "Airport 2006": 23,
+      "Hotel 2006 (update)": 24,
+      "Fire Station 2009": 25,
+      "Hospital 2010": 26,
+      "Police station 2009": 27,
+      "Helath centers 2009": 28,
+      "Solid waste facility": 29,
+      "Seagrass": 30,
+      "Mangrove": 31,
+      "Coral Reef": 32,
+      "Estuarine areas": 33,
+      "Soft bottom habitat": 34,
+      "Rocky shore": 35,
+      "Sandy shore": 36,
+      "Landuse/Land cover 1998": 37,
+      "Coastal inundation 1m (2007)": 38,
+      "Coastal inundation 5m (2007)": 39,
+      "Coastal inundation 10m (2007)": 40,
+      "Riverine Flood Susceptibility": 41,
+      "Sewage outfalls": 42,
+      "Marinas": 43,
+      "Industrial port": 44,
+      "Cruise ports": 45
+    }
+  },
+  "adminFields": [
+      "ADMIN_NAME", 
+      "COUNTRY", 
+      "POP_FLDRISK_NO", 
+      "POP_FLDRISK", 
+      "POP_ILLT", 
+      "INFRA_RDS", 
+      "INFRA_FACIL", 
+      "INFRA_EMERG", 
+      "INFRA_COMM",
+      "REEF_AREA",
+      "MANG_AREA", 
+      "GRASS_AREA",
+      "MANG_CHNG"
+  ]
+}
