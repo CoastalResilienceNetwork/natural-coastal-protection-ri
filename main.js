@@ -585,11 +585,7 @@ define([
                         this.$el.find('.flood-with-select-container').hide();
                         this.$el.find('.flood-without-select-container').hide();
                         this.$el.find('.flood-slider-conatiner').hide();
-                        if(this.period != 'ANN') {
-                            this.$el.find('flood-select-conatiner').show();
-                        } else {
-                            this.$el.find('flood-select-conatiner').hide();
-                        }
+                        this.$el.find('flood-select-conatiner').hide();
                     }
                     this.$el.find('.stat.area').show();
                     this.$el.find('option.coral').show();
