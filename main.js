@@ -1134,14 +1134,16 @@ define([
                 this.state = this.state.setLayer(this.layer);
                 this.state = this.state.setVariable(this.variable);
 
-                if(this.provider == 'mangroves' && this.period != 'ANN') {
-                    this.floodPolyLayer.setVisibleLayers([this.layerID]);
-                    this.floodPolyLayer.setVisibility(this.state.getFloodPolyVisibility());
-                    this.floodPolyLayer.refresh();
-                    this.coastalProtectionLayer.setVisibility(false);
-                } else {
-                    this.coastalProtectionLayer.setVisibility(true);
-                    this.floodPolyLayer.setVisibility(false);
+                if(this.regionConfig.hasNewMangroves) {
+                    if(this.provider == 'mangroves' && this.period != 'ANN') {
+                        this.floodPolyLayer.setVisibleLayers([this.layerID]);
+                        this.floodPolyLayer.setVisibility(this.state.getFloodPolyVisibility());
+                        this.floodPolyLayer.refresh();
+                        this.coastalProtectionLayer.setVisibility(false);
+                    } else {
+                        this.coastalProtectionLayer.setVisibility(true);
+                        this.floodPolyLayer.setVisibility(false);
+                    }
                 }
 
                 this.coastalProtectionLayer.refresh();
