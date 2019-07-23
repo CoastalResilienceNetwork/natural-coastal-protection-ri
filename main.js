@@ -1005,7 +1005,7 @@ define([
                             this.$el.find('.flood-select-container').show();
                             this.$el.find('.flood-with-select-container').show();
                             this.$el.find('.flood-without-select-container').show();
-                            this.$el.find('.flood-slider-conatiner').show();
+                            this.$el.find('.flood-slider-container').show();
                         }
                     }
                 } else if (this.provider === 'coral') {
