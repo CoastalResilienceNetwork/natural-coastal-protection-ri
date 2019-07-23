@@ -1166,6 +1166,7 @@ define([
                     region: this.region,
                     hasAdmin: this.regionJSON.hasAdmin,
                     hasNCP: this.regionJSON.hasNCP,
+                    hasNewMangroves: this.regionJSON.hasNewMangroves,
                     pane: this.app.paneNumber}).replace(/id='/g, "id='" + this.id);
                 this.$el.find('#' + this.id).html(idUpdate);
 
