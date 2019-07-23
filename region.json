@@ -235,6 +235,8 @@
       "Cruise ports": 45
     }
   },
+  "mangroveLayer": 31,
+  "coralLayer": 32,
   "adminFields": [
       "ADMIN_NAME", 
       "COUNTRY", 

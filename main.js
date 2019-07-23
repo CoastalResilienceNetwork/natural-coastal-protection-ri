@@ -252,13 +252,13 @@ define([
                         visible: this.state.getCoralVisibility(),
                         opacity: 0.5
                     });
-                    this.coralReefLayer.setVisibleLayers([this.regionJSON.referenceLayers["Coral Reef"]]);
+                    this.coralReefLayer.setVisibleLayers([this.regionJSON.coralLayer]);
     
                     this.mangroveLayer = new ArcGISDynamicMapServiceLayer(this.regionJSON.serviceURL, {
                         visible: this.state.getMangroveVisibility(),
                         opacity: 0.5
                     });
-                    this.mangroveLayer.setVisibleLayers([this.regionJSON.referenceLayers["Mangrove"]]);
+                    this.mangroveLayer.setVisibleLayers([this.regionJSON.mangroveLayer]);
 
                     if(this.regionJSON.hasNewMangroves) {
                         this.floodWithLayer = new ArcGISDynamicMapServiceLayer(this.regionJSON.serviceURL, {
