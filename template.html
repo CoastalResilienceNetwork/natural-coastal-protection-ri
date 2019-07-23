@@ -743,7 +743,7 @@
           <section class="stats">
   
             <section class="stats-description">
-              <div if (!hasNewMangroves) { %> style="display: none;" <% } class="toggle-controls-container">
+              <div <% if (!hasNewMangroves) { %> style="display: none;" <% } %> class="toggle-controls-container">
                 <span class="toggle-option i18n" data-i18n="Coral Reefs">Coral Reefs</span>
                 <label class="switch">
                   <input id="ncp-provider" type="checkbox">
@@ -1084,7 +1084,7 @@
         </div>
       </div>
   
-      <section class="documents" style="display: none">
+      <section class="documents" style="display: none;">
         <span class="control-title i18n" data-i18n="Documents" style="margin-bottom: 1rem;">Documents:</span>
         <button class="button button-default js-getSnapshot" target="_blank" style="display: none"><img class="download-icon" src="plugins/natural_coastal_protection/downloadIcon.svg" alt="download" /><span class="i18n" data-i18n="Print">Print</span><br><span class="i18n" data-i18n="Country Summary">Country Summary</span></button>
         
