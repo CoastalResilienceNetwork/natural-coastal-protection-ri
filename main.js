@@ -868,7 +868,7 @@ define([
                 if(stats.INFRA_FACIL != null) {
                     this.$el.find('.stat.infra-facilities').show();
                     this.$el.find('.stat.infra-facilities .number .variable').html(
-                        this.numberWithCommas(Math.round(stats.INFRA_FACIL * 100))
+                        this.numberWithCommas(Math.round(stats.INFRA_FACIL))
                     );
                 } else {
                     this.$el.find('.stat.infra-facilities').hide();
@@ -877,7 +877,7 @@ define([
                 if(stats.INFRA_EMERG != null) {
                     this.$el.find('.stat.infra-emergency').show();
                     this.$el.find('.stat.infra-emergency .number .variable').html(
-                        this.numberWithCommas(Math.round(stats.INFRA_EMERG * 100))
+                        this.numberWithCommas(Math.round(stats.INFRA_EMERG ))
                     );
                 } else {
                     this.$el.find('.stat.infra-emergency').hide();
@@ -904,7 +904,7 @@ define([
                 if(stats.HOUSE_DENS != null) {
                     this.$el.find('.stat.house-density').show();
                     this.$el.find('.stat.house-density .number .variable').html(
-                        this.numberWithCommas(Math.round(stats.HOUSE_DENS * 100))
+                        this.numberWithCommas(Math.round(stats.HOUSE_DENS))
                     );
                 } else {
                     this.$el.find('.stat.house-density').hide();
