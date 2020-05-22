@@ -89,7 +89,7 @@ define([
 
                 this.state = new State();
                 this.state = this.state.setRegion(this.regionJSON.defaultRegion);
-                if(this.regionJSON.hasAdmin && ! this.regionJSON.hasNCP) {
+                if(this.regionJSON.hasAdmin && !this.regionJSON.hasNCP) {
                     this.state = this.state.setAdminVisibility(true);
                 }
                 this.provider = this.state.getProvider();
@@ -151,9 +151,9 @@ define([
                     top: 30,
                     right: 30,
                     left: 105,
-                    bottom: 80
+                    bottom: 10
                 };
-                this.chart.position.height = 285 - this.chart.position.margin.top -
+                this.chart.position.height = 280 - this.chart.position.margin.top -
                     this.chart.position.margin.bottom;
                 $(this.printButton).hide();
 
@@ -194,6 +194,9 @@ define([
                         $.proxy(this.toggleFloodWithout, this));
 
                 this.$el.on('click', '.js-getSnapshot', $.proxy(this.printReport, this));
+				
+				this.$el.on('click', '#ncp-tab', function(e) { self.updateReferenceLayersNode('ncp-pane'); });
+				this.$el.on('click', '#admin-tab', function(e) { self.updateReferenceLayersNode('admin-pane'); });
             },
 
             setState: function(data) {
@@ -347,7 +350,7 @@ define([
                     });
     
                     this.adminReferenceLayers = new ArcGISDynamicMapServiceLayer(this.serviceURL, {
-                        visible: this.state.getAdminVisibility(),
+                        //visible: this.state.getAdminVisibility(),
                         opacity: 1
                     });
     
@@ -454,9 +457,11 @@ define([
                         this.$el.find('#ncp-tab').removeClass('active');
                         this.adminUnitsLayer.refresh();
                         this.adminVisualizationLayer.refresh();
-                        this.adminReferenceLayers.refresh();
+                        
                     }
                 }
+				
+				this.adminReferenceLayers.refresh();
 
                 if(this.regionJSON.getStarted && !this.state.getFromShare()) {
                     this.state = this.state.setFromShare(true);
@@ -480,8 +485,9 @@ define([
                     if(this.regionJSON.hasAdmin) {
                         this.adminUnitsLayer.hide();
                         this.adminVisualizationLayer.hide();
-                        this.adminReferenceLayers.hide();
+                        
                     }
+					this.adminReferenceLayers.hide();
                     $(this.legendContainer).hide().html();
                 }
             },
@@ -503,17 +509,25 @@ define([
                     if(this.regionJSON.hasAdmin) {
                         this.adminUnitsLayer.hide();
                         this.adminVisualizationLayer.hide();
-                        this.adminReferenceLayers.hide();
+                        
                     }
+					this.adminReferenceLayers.hide();
                     $(this.legendContainer).hide().html();
                 }
             },
+			
+			updateReferenceLayersNode: function(pane) {
+				console.log('clicked ' + pane);
+				var refLayerNode = dojo.query(".ref-layers")[0];
+				var paneNode = dojo.byId(pane);
+				dojo.place(refLayerNode, paneNode);
+			},
 
             changeScenarioClick: function(e) {
                 this.layer = $(e.currentTarget).closest('.stat').data('layer');
                 this.$el.find('.stat.active').removeClass('active');
                 $(e.currentTarget).closest('.stat').addClass('active');
-
+				
                 this.updateLayers();
             },
 
@@ -522,7 +536,7 @@ define([
                     if(this.$el.find('#ncp-tab').hasClass('active')) {
                         this.adminUnitsLayer.setVisibility(true);
                         this.adminVisualizationLayer.setVisibility(true);
-                        this.adminReferenceLayers.setVisibility(true);
+                        //this.adminReferenceLayers.setVisibility(true);
                         this.coastalProtectionLayer.setVisibility(false);
                         this.coralReefLayer.setVisibility(false);
                         this.mangroveLayer.setVisibility(false);
@@ -543,7 +557,7 @@ define([
                     } else {
                         this.adminUnitsLayer.setVisibility(false);
                         this.adminVisualizationLayer.setVisibility(false);
-                        this.adminReferenceLayers.setVisibility(false);
+                        //this.adminReferenceLayers.setVisibility(false);
                         this.coastalProtectionLayer.setVisibility(true);
                         this.coralReefLayer.setVisibility(this.state.getCoralVisibility());
                         this.mangroveLayer.setVisibility(this.state.getMangroveVisibility());
@@ -559,7 +573,7 @@ define([
                 } else {
                     this.adminUnitsLayer.setVisibility(true);
                     this.adminVisualizationLayer.setVisibility(true);
-                    this.adminReferenceLayers.setVisibility(true);
+                    //this.adminReferenceLayers.setVisibility(true);
                     this.state = this.state.setAdminVisibility(true);
                     if(this.state.getAdminUnit()) {
                         this.changeAdminClick(this.state.getAdminUnit(), null);
