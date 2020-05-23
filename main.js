@@ -1451,7 +1451,7 @@ define([
 
                 // Add chart legend
                 this.chart.legend = this.chart.svg.append('g')
-                    .attr('transform', 'translate(0,210)')
+                    .attr('transform', 'translate(0,0)')
                     .attr('class', 'chart-legend')
                     .attr('opacity', 0);
 
